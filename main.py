@@ -38,11 +38,12 @@ def start(message: Message):
                 # Vérifier si le message transféré est une photo ou un document
                 sent_message = None
                 
-                sent_message = bot.send_document(chat_id, message_link)
-                sent_message = bot.send_document(CANAL_ID, message_link)
+                
                
 
                 if sent_message.document:
+                    sent_message = bot.send_document(chat_id, message_link)
+                    sent_message = bot.send_document(CANAL_ID, message_link)
                     time.sleep(60)
                 else:
                     continue
