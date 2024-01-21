@@ -42,10 +42,10 @@ def start(message: Message):
                 sent_message = bot.send_document(CANAL_ID, message_link)
                
 
-                if sent_message.sticker:
-                    continue
+                if sent_message.document:
+                    time.sleep(60)
                 else:
-                    time.sleep(50)
+                    continue
 
             except telebot.apihelper.ApiException:
                 continue
