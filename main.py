@@ -9,10 +9,10 @@ import schedule
 
 from keep_alive import keep_alive
 
-BOT_TOKEN = '6735522008:AAGdECJSZkelv5wKzd6qEF5jIb33E_Mdt3g'
+BOT_TOKEN = '6863934525:AAHIQuoW7MbumOZzLz8MkK109DW2SLRdZAs'
 CANAL_USERNAME = 'SharClub702'  # Remplacez par le nom d'utilisateur du canal
 CANAL_ID = -1002072366730
-GROUPE_ALEA = -1002050969919
+GROUPE_ALEA = -1002054489996
 
 # Créez une instance de bot
 bot = telebot.TeleBot(BOT_TOKEN)
