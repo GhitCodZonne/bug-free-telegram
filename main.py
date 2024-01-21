@@ -39,12 +39,11 @@ def start(message: Message):
                 sent_message = None
                 
                 
-               
+                # sent_message = bot.send_document(chat_id, message_link)
+                sent_message = bot.send_document(CANAL_ID, message_link)
 
                 if sent_message.document:
-                    sent_message = bot.send_document(chat_id, message_link)
-                    sent_message = bot.send_document(CANAL_ID, message_link)
-                    time.sleep(60)
+                    time.sleep(10)
                 else:
                     continue
 
